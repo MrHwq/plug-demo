@@ -6,7 +6,8 @@
 <script>
 
 export default {
-  name: 'plug-demo-devtools',
+  name: 'PlugDemoDevtools',
+  comments() { },
   components: {
 
   },
@@ -15,11 +16,10 @@ export default {
 
     }
   },
+  watch: {
+  },
   created() {
 
-  },
-  comments() { },
-  watch: {
   },
   methods: {
 
