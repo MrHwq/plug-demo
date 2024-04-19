@@ -14,10 +14,10 @@ const plugins = [
 		from: path.resolve('src/assets/logo.png'),
 		to: `${path.resolve('dist')}/img/logo.png`,
 	},
-	{
-		from: path.resolve('src/content/tools.json'),
-		to: `${path.resolve('dist')}/js/tools.json`,
-	},
+	// {
+	// 	from: path.resolve('src/content/tools.json'),
+	// 	to: `${path.resolve('dist')}/js/tools.json`,
+	// },
 ]
 
 chromeName.forEach((name) => {
