@@ -4,6 +4,7 @@ import { BasicLayout } from './layouts'
 import home from './views/home.vue'
 import index from './views/index.vue'
 import tools from '../devtools/App.vue'
+import bookmarks from './views/sample.bookmarks/bookmarks.vue'
 // hack router push callback
 const originalPush = Router.prototype.push
 Router.prototype.push = function push(location, onResolve, onReject) {
@@ -20,7 +21,7 @@ export default new Router({
 	routes: [
 		{
 			path: '/',
-			redirect: '/index',
+			redirect: '/bookmarks',
 			component: BasicLayout,
 			children: [
 				{
@@ -37,6 +38,11 @@ export default new Router({
 					path: 'tools',
 					name: 'tools',
 					component: tools,
+				},
+				{
+					path: 'bookmarks',
+					name: 'bookmarks',
+					component: bookmarks
 				},
 			],
 		},

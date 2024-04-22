@@ -28,7 +28,8 @@
 		"webRequestBlocking",
 		"<all_urls>",
 		"webNavigation",
-		"contextMenus"
+		"contextMenus",
+		"bookmarks"
 	],
 	"content_scripts": [
 		{
